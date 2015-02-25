@@ -41,7 +41,7 @@ public class BasicExample {
         ContactId contactId = new ContactId(contact.getFirstName(),
                 contact.getLastName());
 
-        System.out.println("------BasicExample begins 1------");
+        System.out.println("------BasicExample begins 2------");
         // associate a ContactId with a Contact in the cache
         cache.put(contactId, contact);
 
