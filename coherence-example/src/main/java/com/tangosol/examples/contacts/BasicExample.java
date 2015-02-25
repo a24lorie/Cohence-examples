@@ -41,7 +41,7 @@ public class BasicExample {
         ContactId contactId = new ContactId(contact.getFirstName(),
                 contact.getLastName());
 
-        System.out.println("------BasicExample begins------");
+        System.out.println("------BasicExample begins 1------");
         // associate a ContactId with a Contact in the cache
         cache.put(contactId, contact);
 
@@ -50,6 +50,6 @@ public class BasicExample {
 
         // remove mapping of ContactId to Contact from the cache.
         cache.remove(contactId);
-        System.out.println("------BasicExample completed------");
+        System.out.println("------BasicExample completed 1------");
     }
 }
