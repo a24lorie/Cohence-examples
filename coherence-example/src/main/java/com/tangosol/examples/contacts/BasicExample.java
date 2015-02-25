@@ -50,6 +50,6 @@ public class BasicExample {
 
         // remove mapping of ContactId to Contact from the cache.
         cache.remove(contactId);
-        System.out.println("------BasicExample completed 1------");
+        System.out.println("------BasicExample completed 2------");
     }
 }
