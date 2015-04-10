@@ -1,5 +1,5 @@
 Starting cache on console:
-	java -cp C:\OracleCoherence\coherence\lib\coherence.jar -Dtangosol.coherence.ttl=4 -Dtangosol.coherence.distributed.localstorage=false -Dtangosol.coherence.ttl=0 -Dtangosol.coherence.cluster=alb_localhost -Dtangosol.coherence.clusterport=10099 -Dtangosol.coherence.clusteraddress=224.0.1.10 com.tangosol.net.DefaultCacheServer
+	java -cp COHERENCE_HOME\coherence.jar -Dtangosol.coherence.cacheconfig=PATH_CLASES\contactsCache-config.xml -Dtangosol.coherence.ttl=4 -Dtangosol.coherence.cluster=alb_localhost -Dtangosol.coherence.clusterport=10099 -Dtangosol.coherence.clusteraddress=224.0.1.10 -Dtangosol.coherence.management.remote=true -Dtangosol.coherence.management=all -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=7091 -Dcom.sun.management.jmxremote.autodiscovery=true com.tangosol.net.DefaultCacheServer
 
 Verifing cache
 	java -classpath COHERENCE_HOME\coherence.jar;COHERENCE_HOME\config;PATH_CLASES\classes -Dtangosol.coherence.cacheconfig=PATH_TO\contactsCache-config.xml -Dtangosol.coherence.distributed.localstorage=false -Dtangosol.coherence.ttl=0 -Dtangosol.coherence.cluster=alb_localhost -Dtangosol.coherence.clusterport=10099 -Dtangosol.coherence.clusteraddress=224.0.1.10 com.tangosol.net.CacheFactory
